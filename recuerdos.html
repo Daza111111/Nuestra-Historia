@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar & Yuritzi - Recuerdos</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/recuerdos.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo animate__animated animate__heartBeat animate__infinite">O&Y</div>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="recuerdos.html" class="active">Recuerdos</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="diario.html">Diario</a></li>
+            <li><a href="#" id="logout">Salir</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero-section animate__animated animate__fadeIn">
+            <h1>Nuestros Momentos Especiales</h1>
+            <p>Cada recuerdo es un tesoro que guardamos en nuestro corazón ❤️</p>
+        </div>
+
+        <div class="galeria" id="galeriaRecuerdos"></div>
+
+        <div class="agregar-recuerdo animate__animated animate__fadeInUp">
+            <div class="form-header">
+                <h2>✨ Crear Nuevo Recuerdo ✨</h2>
+                <p>Comparte un momento especial de nuestro amor</p>
+            </div>
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="tituloRecuerdo">Título del Recuerdo</label>
+                    <input type="text" id="tituloRecuerdo" placeholder="¿Qué momento especial quieres recordar?">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcionRecuerdo">Descripción</label>
+                    <textarea id="descripcionRecuerdo" placeholder="Cuéntanos más sobre este hermoso momento..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaRecuerdo">Fecha del Recuerdo</label>
+                    <input type="date" id="fechaRecuerdo">
+                </div>
+
+                <div class="media-upload">
+                    <label for="mediaFile" class="upload-label">
+                        <span class="upload-icon">📸</span>
+                        <span>Agregar Fotos o Videos</span>
+                        <small>Arrastra aquí o haz clic para seleccionar</small>
+                    </label>
+                    <input type="file" id="mediaFile" accept="image/*,video/*" multiple>
+                    <div id="previewContainer" class="preview-container"></div>
+                </div>
+
+                <button id="guardarRecuerdo" class="save-button">
+                    <span class="button-icon">💝</span>
+                    <span>Guardar Recuerdo</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="js/nav.js"></script>
+    <script type="module" src="js/recuerdos.js"></script>
+</body>
+</html>

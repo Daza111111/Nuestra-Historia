@@ -1,0 +1,15 @@
+/* Color Variables */
+:root {
+  --primary-color: #ff4d7e;
+  --primary-light: #ff7aa2;
+  --primary-dark: #e63e6d;
+  --secondary-color: #ff9ebd;
+  --accent-color: #ffccd5;
+  --background-light: #fff0f3;
+  --background-dark: #ffe6eb;
+  --text-primary: #2c1810;
+  --text-secondary: #4a3830;
+  --shadow-color: rgba(255, 77, 126, 0.2);
+  --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --gradient-light: linear-gradient(135deg, var(--accent-color), var(--background-light));
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar & Yuritzi - Poemas</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/poemas.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">O&Y</div>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="recuerdos.html">Recuerdos</a></li>
+            <li><a href="poemas.html" class="active">Poemas</a></li>
+            <li><a href="diario.html">Diario</a></li>
+            <li><a href="#" id="logout">Salir</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Poemas de Amor</h1>
+        <div class="poemas-container">
+            <div class="escribir-poema">
+                <h2>Escribe un Poema</h2>
+                <input type="text" id="tituloPoema" placeholder="Título del poema">
+                <textarea id="contenidoPoema" placeholder="Escribe tu poema aquí..."></textarea>
+                <button id="guardarPoema">Publicar Poema 💝</button>
+            </div>
+            <div id="listaPoemas" class="poemas-lista"></div>
+        </div>
+    </main>
+
+    <script src="js/nav.js"></script>
+    <script src="js/poemas.js"></script>
+</body>
+</html>

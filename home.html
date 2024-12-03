@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar & Yuritzi - Inicio</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo animate__animated animate__heartBeat animate__infinite">O&Y</div>
+        <ul>
+            <li><a href="home.html" class="active">Inicio</a></li>
+            <li><a href="recuerdos.html">Recuerdos</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="diario.html">Diario</a></li>
+            <li><a href="#" id="logout">Salir</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="hero animate__animated animate__fadeIn">
+            <h1>Nuestro Amor</h1>
+            <p>Un espacio dedicado a nuestro amor eterno ❤️</p>
+        </section>
+
+        <div class="origami-container">
+            <div class="origami-card animate__animated animate__fadeInUp">
+                <span class="origami-icon">💝</span>
+                <h3>Amor Eterno</h3>
+                <p>Como el origami, nuestro amor es un arte que se dobla con cuidado y dedicación</p>
+            </div>
+            <div class="origami-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                <span class="origami-icon">🕊️</span>
+                <h3>Libertad</h3>
+                <p>Como una grulla de papel, nuestro amor vuela libre y sin límites</p>
+            </div>
+            <div class="origami-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                <span class="origami-icon">⭐</span>
+                <h3>Brillante</h3>
+                <p>Como una estrella de papel, nuestro amor brilla con luz propia</p>
+            </div>
+        </div>
+
+        <section class="mensajes animate__animated animate__fadeInUp">
+            <h2>Mensajes de Amor</h2>
+            <div class="mensaje-form">
+                <textarea id="nuevoMensaje" placeholder="Escribe un mensaje de amor..."></textarea>
+                <button id="enviarMensaje">
+                    <span>Enviar</span>
+                    <span>💝</span>
+                </button>
+            </div>
+            <div id="mensajesContainer" class="mensajes-lista"></div>
+        </section>
+    </main>
+    
+    <script type="module" src="js/nav.js"></script>
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>
